@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let a = prompt("Enter: ");
+    let str = a.toString();
+    let result = new Array();
+    for (let i = 0; i < str.length; i++) {
+        if ("A" < str[i + 1] && str[i + 1] < "Z" || "A" < str[i] && str[i] < "Z") {
+            result.push(str[i].toLowerCase());
+        } else if ("a" < str[i + 1] && str[i + 1] < "z" || "a" < str[i] && str[i] < "z") {
+            result.push(str[i].toUpperCase());
+        }
+    }
+    document.write(result.join(""));
+
+    // let str = 'buihoanglinh';
+    // let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    // let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    // let result = [];
+
+    // for (let x = 0; x < str.length; x++) {
+    //     if (UPPER.indexOf(str[x]) !== -1) {
+    //         result.push(str[x].toLowerCase());
+    //     } else if (LOWER.indexOf(str[x]) !== -1) {
+    //         result.push(str[x].toUpperCase());
+    //     } else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // document.write(result.join(''));
+</script>
+</body>
+</html>
